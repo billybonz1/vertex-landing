@@ -73,7 +73,7 @@ html {
 }
 
 body {
-	background: transparent;
+	background: #000;
 	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
 	font-size: 16px;
 	line-height: 28px;
@@ -85,7 +85,7 @@ body {
 }
 
 /*---------------------------------------
-   1.2 PRE-LOADER              
+   1.2 PRE-LOADER
 -----------------------------------------*/
 .preloader {
 	position: fixed;
@@ -110,7 +110,7 @@ body {
 }
 
 /*---------------------------------------
-   2.3 ANCHOR AND BOLD TEXT           
+   2.3 ANCHOR AND BOLD TEXT
 -----------------------------------------*/
 a {
 	text-decoration: none;
@@ -123,7 +123,7 @@ a:hover {
 }
 
 /*---------------------------------------
-   1.4 MISC FIXES         
+   1.4 MISC FIXES
 -----------------------------------------*/
 @-webkit-viewport {
 	width: device-width;
@@ -205,7 +205,7 @@ li {
 =========================================
 -----------------------------------------*/
 /*---------------------------------------
-   2.1 TYPOGRAPHY      
+   2.1 TYPOGRAPHY
 -----------------------------------------*/
 /* HEADINGS */
 h1,
@@ -295,7 +295,7 @@ strong,
 }
 
 /*---------------------------------------
-   2.2 BUTTONS       
+   2.2 BUTTONS
 -----------------------------------------*/
 .standard-button {
 	border-radius: 3px;
@@ -362,7 +362,7 @@ strong,
 }
 
 /*---------------------------------------
-   2.3 BORDER AND LINE       
+   2.3 BORDER AND LINE
 -----------------------------------------*/
 .border-right {
 	border-right: 1px solid #eaeaea;
@@ -413,9 +413,8 @@ strong,
 }
 
 .grey-bg {
-	border-top: 1px solid #eaebec;
-	border-bottom: 1px solid #eaebec;
-	background: #F7F8FA;
+	background: #000;
+	color: #fff;
 }
 
 .dark-bg {
