@@ -114,8 +114,6 @@ body {
 -----------------------------------------*/
 a {
 	text-decoration: none;
-	-webkit-transition: all ease 0.25s;
-	transition: all ease 0.25s;
 }
 
 a:hover {
@@ -1263,11 +1261,13 @@ strong,
 .user__info .social{
 	margin: 0 16px 0 0;
 	text-decoration: none;
-	color: #00AEF3;
+
 
 }
+
 .user__info .social .fa{
 	transition: .2s all;
+	color: #00AEF3;
 }
 .user__info .social:hover .fa{
 	transform: rotate(360deg) scale(1.2);
