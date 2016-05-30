@@ -1244,8 +1244,34 @@ strong,
 .block{
 	display: block;
 }
+.block + .block{
+	margin-bottom: 13px;
+}
 .user__info a{
 	color: #fff;
+}
+.user__info a.phone{
+	margin-top: 11px;
+}
+.user__info .fa{
+	font-size: 19px;
+	vertical-align: middle;
+}
+.user__info .social{
+	margin: 0 16px 0 0;
+	text-decoration: none;
+	color: #00AEF3;
+
+}
+.user__info .social .fa{
+	transition: .2s all;
+}
+.user__info .social:hover .fa{
+	transform: rotate(360deg) scale(1.2);
+	color: #fff;
+}
+.user__info .block .fa{
+	margin-right: 8px;
 }
 .videoBG{
 	position: fixed;
