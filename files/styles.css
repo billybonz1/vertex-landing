@@ -1247,6 +1247,9 @@ strong,
 .block + .block{
 	margin-bottom: 13px;
 }
+.block:hover .fa{
+	animation: 1s shake;
+}
 .user__info a{
 	color: #fff;
 }
@@ -1355,4 +1358,25 @@ strong,
 	.videoBG video{
 		top: 55px;
 	}
-} 
+}
+
+@-webkit-keyframes shake{
+	0%,25%,45%,65%,85%{
+		-webkit-transform:rotate(10deg);
+		transform:rotate(10deg)
+	}
+	100%,15%,35%,55%,75%,95%{
+		-webkit-transform:rotate(-10deg);
+		transform:rotate(-10deg)
+	}
+}
+@keyframes shake{
+	0%,25%,45%,65%,85%{
+		-webkit-transform:rotate(10deg);
+		transform:rotate(10deg)
+	}
+	100%,15%,35%,55%,75%,95%{
+		-webkit-transform:rotate(-10deg);
+		transform:rotate(-10deg)
+	}
+}
