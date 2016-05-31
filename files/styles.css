@@ -1389,6 +1389,13 @@ strong,
 	.videoBG .photo__bg{
 		display: block;
 	}
+	.pozvonim-button-center-text{
+		display: none;
+	}
+	.videoBG .photo__bg{
+		height: 220%;
+		background-size: 272%;
+	}
 }
 @media (max-width: 504px){
 	.horizontal-subscribe-form .input-box{
@@ -1400,7 +1407,7 @@ strong,
 }
 @media (max-width: 364px){
 	.videoBG .photo__bg{
-		height: 180%;
+		height: 220%;
 		background-size: 272%;
 	}
 }
