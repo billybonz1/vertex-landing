@@ -1397,6 +1397,12 @@ strong,
 		height: 220%;
 		background-size: 272%;
 	}
+	.close{
+		font-size: 35px;
+	}
+	.popup .horizontal-subscribe-form{
+		max-width: 95%;
+	}
 }
 @media (max-width: 504px){
 	.horizontal-subscribe-form .input-box{
