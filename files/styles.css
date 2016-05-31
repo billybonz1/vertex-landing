@@ -1413,7 +1413,7 @@ strong,
 	}
 	.BOTTOM_RIGHT{
 		bottom: 0px !important;
-		right: 0px !important;
+		right: -30px !important;
 	}
 }
 @media (max-width: 504px){
