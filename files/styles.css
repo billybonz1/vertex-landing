@@ -1497,22 +1497,7 @@ strong,
 	position: fixed !important;
 	-webkit-overflow-scrolling: touch;
 }
-.popup{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.8);
-	z-index: 1000000000;
-	transform: scale(0);
-	opacity: 0;
-	visibility: hidden;
-	transition: .2s all;
-}
-.popup.active{
-	transform: scale(1);
-	opacity: 1;
-	visibility: visible;
-}
+
 .popup .horizontal-subscribe-form{margin-top: 10%;background: rgba(230, 229, 229, 0.44);max-width: 583px;}
 
 .close{
@@ -1526,4 +1511,30 @@ strong,
 	opacity: 1;
 	color: #fff;
 	transform: scale(1.1);
+}
+.popup__overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	z-index: 100000000;
+	transform: scale(0);
+	opacity: 0;
+	visibility: hidden;
+	transition: .2s all;
+}
+.popup{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1000000000;
+	transform: scale(0);
+	opacity: 0;
+	visibility: hidden;
+	transition: .2s all;
+}
+.popup.active,.popup__overlay.active{
+	transform: scale(1);
+	opacity: 1;
+	visibility: visible;
 }

@@ -58,7 +58,7 @@
 
     </div>
 </div>
-
+<div class="popup__overlay"></div>
 <div class="videoBG_wrapper" style="position: absolute; top: 0px; left: 0px; height: 60%; width: 100%; z-index: 1;">
     <!-- =========================
 PRE LOADER
@@ -182,10 +182,10 @@ PRE LOADER
 <script>
     $(document).ready(function(){
        $('#pozvonim-button').on("click", function(){
-           $(".popup").addClass('active');
+           $(".popup,.popup__overlay").addClass('active');
        });
         $('.close').on("click", function(){
-            $(".popup").removeClass('active');
+            $(".popup,.popup__overlay").removeClass('active');
         });
 
         $("#cf-phone").intlTelInput({
