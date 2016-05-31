@@ -585,6 +585,9 @@ strong,
 	background: rgba(0, 0, 0, 0.45);
 	border-radius: 6px;
 	padding: 25px 25px 25px 25px;
+	width: 68%;
+	max-width: 604px;
+	min-width: 290px;
 }
 
 .horizontal-subscribe-form form {
@@ -603,11 +606,11 @@ strong,
 
 .horizontal-subscribe-form .input-box {
 	min-height: 65px;
-	width: 350px;
+	width: 100%;
 	font-size: inherit;
 }
 /*---------------------------------------
-   3.2 SECTION: CLIENTS LIST    
+   3.2 SECTION: CLIENTS LIST
 -----------------------------------------*/
 .client-logos {
 	border-bottom: 1px solid #dadfe3;
@@ -631,7 +634,7 @@ strong,
 }
 
 /*---------------------------------------
-   3.3 SECTION: SERVICES    
+   3.3 SECTION: SERVICES
 -----------------------------------------*/
 .single-service {
 	padding: 0px 5px 0px 5px;
@@ -656,7 +659,7 @@ strong,
 }
 
 /*---------------------------------------
-   3.4 SECTION: APP BRIEF    
+   3.4 SECTION: APP BRIEF
 -----------------------------------------*/
 .brief {
 	padding-top: 80px;
@@ -754,7 +757,7 @@ strong,
 }
 
 /*---------------------------------------
-   3.5 SECTION: STATS 
+   3.5 SECTION: STATS
 -----------------------------------------*/
 .stats {
 	background: transparent;
@@ -785,7 +788,7 @@ strong,
 }
 
 /*---------------------------------------
-   3.6 SECTION: UNIQUE FEATURES 
+   3.6 SECTION: UNIQUE FEATURES
 -----------------------------------------*/
 .unique-features {
 	padding-bottom: 100px;
@@ -828,7 +831,7 @@ strong,
 }
 
 /*---------------------------------------
-   3.7 SECTION: PRICING TABLE 
+   3.7 SECTION: PRICING TABLE
 -----------------------------------------*/
 .pricing {
 	padding-bottom: 30px;
@@ -910,7 +913,7 @@ strong,
 }
 
 /*---------------------------------------
-   3.8 SECTION: SCREENSHOTS   
+   3.8 SECTION: SCREENSHOTS
 -----------------------------------------*/
 .features {
 	background: transparent;
@@ -1227,11 +1230,11 @@ strong,
 
 
 .user__info{
-	position: absolute;
+	position: fixed;
 	z-index: 10;
 	text-align: left;
 	width: 330px;
-	background: rgba(0, 0, 0, 0.62);
+	background: rgba(108, 125, 142, 0.62);
 	padding-bottom: 12px;
 	border-radius: 6px;
 	font-size: 14px;
@@ -1324,13 +1327,13 @@ strong,
 		transform: scale(1.4);
 	}
 	.only-logo{
-		padding-bottom: 152px;
 	}
 	.user__info{
-		right: auto;
-		margin-left: -165px;
-		left: 50%;
-		top: 179px;
+		margin: 0 auto;
+		position: static;
+		margin-bottom: 51px;
+		width: 100%;
+		max-width: 330px;
 	}
 }
 @media (max-width: 978px){
@@ -1350,6 +1353,10 @@ strong,
 		top: -15px;
 		transform: scale(1.8);
 	}
+	.intro{
+		font-size: 40px;
+		line-height: 49px;
+	}
 }
 @media (max-width: 870px){
 	.videoBG video{
@@ -1362,7 +1369,16 @@ strong,
 		top: 55px;
 	}
 }
-
+@media (max-width: 682px){
+	.videoBG video{
+		display: none;
+	}
+}
+@media (max-width: 504px){
+	.horizontal-subscribe-form .input-box{
+		font-size: 13px;
+	}
+}
 @-webkit-keyframes shake{
 	0%,25%,45%,65%,85%{
 		-webkit-transform:rotate(10deg);
