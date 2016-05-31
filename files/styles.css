@@ -305,7 +305,7 @@ strong,
 	font-size: 16px;
 	line-height: 1.6;
 	border: none;
-	padding: 18px 40px 18px 40px;
+	padding: 10px 40px 10px 40px;
 	color: #ffffff;
 	-webkit-transition: none;
 	transition: none;
@@ -436,7 +436,7 @@ strong,
 }
 
 /*---------------------------------------
-   2.4 SECTION HEADERS       
+   2.4 SECTION HEADERS
 -----------------------------------------*/
 .section-header {
 	margin-top: 90px;
@@ -453,7 +453,7 @@ strong,
 }
 
 /*---------------------------------------
-   2.5 FORM ELEMENTS       
+   2.5 FORM ELEMENTS
 -----------------------------------------*/
 .input-box,
 .textarea-box {
@@ -493,7 +493,7 @@ strong,
 =========================================
 -----------------------------------------*/
 /*---------------------------------------
-   3.1 SECTION: HOME / HEADER         
+   3.1 SECTION: HOME / HEADER
 -----------------------------------------*/
 .header {
 	background: transparent;
@@ -584,10 +584,11 @@ strong,
 	display: inline-block;
 	background: rgba(0, 0, 0, 0.45);
 	border-radius: 6px;
-	padding: 25px 25px 25px 25px;
+	padding: 15px 25px 15px 25px;
 	width: 68%;
-	max-width: 604px;
+	max-width: 401px;
 	min-width: 274px;
+	position: relative;
 }
 
 .horizontal-subscribe-form form {
@@ -605,7 +606,7 @@ strong,
 }
 
 .horizontal-subscribe-form .input-box {
-	min-height: 65px;
+	min-height: 48px;
 	width: 100%;
 	font-size: inherit;
 }
@@ -1318,7 +1319,7 @@ strong,
 	min-height: 0px;
 	width: 100%;
 	height: 150%;
-	background: url(../bg.jpg) no-repeat left top;
+	background: url(../bg.jpg) no-repeat center top;
 	display: none;
 	background-size: 230%;
 }
@@ -1404,25 +1405,110 @@ strong,
 	}
 }
 @-webkit-keyframes shake{
-	0%,25%,45%,65%,85%{
+	0%,25%,50%,75%,100%{
 		-webkit-transform:rotate(10deg);
 		transform:rotate(10deg)
 	}
-	100%,15%,35%,55%,75%,95%{
+	12%,37%,62%,87%{
 		-webkit-transform:rotate(-10deg);
 		transform:rotate(-10deg)
 	}
 }
 @keyframes shake{
-	0%,25%,45%,65%,85%{
+	0%,25%,50%,75%,100%{
 		-webkit-transform:rotate(10deg);
 		transform:rotate(10deg)
 	}
-	100%,15%,35%,55%,75%,95%{
+	12%,37%,62%,87%{
 		-webkit-transform:rotate(-10deg);
 		transform:rotate(-10deg)
 	}
 }
+@-webkit-keyframes arr{
+	0%,25%,50%,75%{
+		-webkit-transform:rotate(-20deg);
+		transform:rotate(-20deg);
+	}
+	12%,37%,62%,87%,100%{
+		-webkit-transform:rotate(10deg) translateY(42px);
+		transform:rotate(10deg) translateY(42px);
+	}
+}
+@keyframes arr{
+	0%,25%,50%,75%{
+		-webkit-transform:rotate(-20deg);
+		transform:rotate(-20deg);
+	}
+	12%,37%,62%,87%,100%{
+		-webkit-transform:rotate(10deg) translateY(42px);
+		transform:rotate(10deg) translateY(42px);
+	}
+}
+
+@-webkit-keyframes phone-shake{
+	0%,10%,20%,30%,40%,50%,60%{
+		-webkit-transform:rotate(10deg);
+		transform:rotate(10deg)
+	}
+	5%,15%,25%,35%,45%,55%{
+		-webkit-transform:rotate(-10deg);
+		transform:rotate(-10deg)
+	}
+	65%,70%,75%,80%,85%,90%,95%,100%{
+		-webkit-transform:rotate(0deg);
+		transform:rotate(0deg)
+	}
+}
 .consultant-name{
 	margin-left: 22px;
+}
+.arr{
+	background: url(../arr.png);
+	width: 175px;
+	height: 157px;
+	background-size: 100%;
+	transform: rotate(-20deg);
+	animation: 5s arr forwards;
+}
+.callback{
+	position: absolute;
+	right: -50%;
+	top: 0;
+}
+.BOTTOM_RIGHT{
+	bottom: 0px !important;
+	right: 0px !important;
+	opacity: 1 !important;
+	display: block !important;
+	position: fixed !important;
+}
+.popup{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	z-index: 1000000000;
+	transform: scale(0);
+	opacity: 0;
+	visibility: hidden;
+	transition: .2s all;
+}
+.popup.active{
+	transform: scale(1);
+	opacity: 1;
+	visibility: visible;
+}
+.popup .horizontal-subscribe-form{margin-top: 10%;background: rgba(230, 229, 229, 0.44);max-width: 583px;}
+
+.close{
+	color: #fff;
+	opacity: 1;
+	position: absolute;
+	right: 0px;
+	top: -24px;
+}
+.close:hover{
+	opacity: 1;
+	color: #fff;
+	transform: scale(1.1);
 }
