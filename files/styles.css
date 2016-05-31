@@ -1323,6 +1323,14 @@ strong,
 	display: none;
 	background-size: 230%;
 }
+.BOTTOM_RIGHT{
+	bottom: 42px !important;
+	right: 29px !important;
+	opacity: 1 !important;
+	display: block !important;
+	position: fixed !important;
+	-webkit-overflow-scrolling: touch;
+}
 @media (max-width: 1105px){
 	.videoBG video{
 		transform: scale(1.3);
@@ -1402,6 +1410,10 @@ strong,
 	}
 	.popup .horizontal-subscribe-form{
 		max-width: 95%;
+	}
+	.BOTTOM_RIGHT{
+		bottom: 0px !important;
+		right: 0px !important;
 	}
 }
 @media (max-width: 504px){
@@ -1489,14 +1501,7 @@ strong,
 	right: -50%;
 	top: 0;
 }
-.BOTTOM_RIGHT{
-	bottom: 42px !important;
-	right: 29px !important;
-	opacity: 1 !important;
-	display: block !important;
-	position: fixed !important;
-	-webkit-overflow-scrolling: touch;
-}
+
 
 .popup .horizontal-subscribe-form{margin-top: 10%;background: rgba(230, 229, 229, 0.44);max-width: 583px;}
 
