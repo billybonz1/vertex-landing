@@ -1318,7 +1318,7 @@ strong,
 	min-width: 0px;
 	min-height: 0px;
 	width: 100%;
-	height: 150%;
+	height: 180%;
 	background: url(../bg.jpg) no-repeat center top;
 	display: none;
 	background-size: 230%;
@@ -1490,8 +1490,8 @@ strong,
 	top: 0;
 }
 .BOTTOM_RIGHT{
-	bottom: 0px !important;
-	right: 0px !important;
+	bottom: 42px !important;
+	right: 29px !important;
 	opacity: 1 !important;
 	display: block !important;
 	position: fixed !important;
