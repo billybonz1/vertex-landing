@@ -1381,6 +1381,9 @@ strong,
 	.videoBG video{
 		top: 55px;
 	}
+	.pozvonim-button-text{
+		display: none !important;
+	}
 }
 @media (max-width: 682px){
 	.videoBG video{
@@ -1389,9 +1392,7 @@ strong,
 	.videoBG .photo__bg{
 		display: block;
 	}
-	.pozvonim-button-center-text{
-		display: none;
-	}
+
 	.videoBG .photo__bg{
 		height: 220%;
 		background-size: 272%;
