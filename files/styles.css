@@ -1412,8 +1412,8 @@ strong,
 		max-width: 95%;
 	}
 	.BOTTOM_RIGHT{
-		bottom: 0px !important;
-		right: -30px !important;
+		bottom: -10px !important;
+		right: -20px !important;
 	}
 }
 @media (max-width: 504px){
