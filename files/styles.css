@@ -114,6 +114,9 @@ body {
 -----------------------------------------*/
 a {
 	text-decoration: none;
+	-webkit-transition: all ease 0.25s;
+	transition: all ease 0.25s;
+	color: #00AEF3;
 }
 
 a:hover {
@@ -1295,7 +1298,7 @@ strong,
 .videoBG video{
 	position: absolute;
 	z-index: 0;
-	top: -30px;
+	top: -40px;
 	left: 0px;
 	min-width: 0px;
 	min-height: 0px;
@@ -1379,4 +1382,7 @@ strong,
 		-webkit-transform:rotate(-10deg);
 		transform:rotate(-10deg)
 	}
+}
+.consultant-name{
+	margin-left: 22px;
 }
